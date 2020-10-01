@@ -24,23 +24,17 @@ l=[]
 def input_(s, c):
 
     print("Enter the Position where you want to Move {} ".format(s))
-    ba = input()
-    
-    if ba.isdigit():
-        b=int(b)
-        l.append(b)
-        if l.count(b)>=2:
-            print("Sorry This Place is Already Occupied Try Another ")
-            return 0
-
-
-        else:
-            h=replacer(c, s, pos[b-1])
-
-            return h
-    else:
-        print("You have Not Entered a Digit Please Enter Again ")
+    b = int(input())
+    l.append(b)
+    if l.count(b)>=2:
+        print("Sorry This Place is Already Occupied Try Another ")
         return 0
+
+    
+    else:
+        h=replacer(c, s, pos[b-1])
+        
+        return h
     
 
 a='''___|___|___
